@@ -1,0 +1,8 @@
+#!/run/media/andrey/f60d2770-2671-4d94-83d8-1f467d2b3769/programming/projects/python-node-example/env/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
